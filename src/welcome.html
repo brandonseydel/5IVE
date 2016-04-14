@@ -1,0 +1,82 @@
+<template>
+    <div id="video" style="position:relative; top:0;right:0;left:0;" class="au-animate">
+        <video autoplay="autoplay" width="100%" height="auto" id="bgVideo" poster="//d585tldpucybw.cloudfront.net/sfimages/default-source/Homepage/hero-video-poster.jpg"
+        loop="loop">
+            <source type="video/webm" src="//d585tldpucybw.cloudfront.net/telerik-videos/homepage/video-header.webm">
+            <source type="video/mp4" src="//d585tldpucybw.cloudfront.net/telerik-videos/homepage/video-header.mp4">
+            <img alt="Develop Experiences" width="100%" height="auto" src="//d585tldpucybw.cloudfront.net/sfimages/default-source/labs/vid-home-fallback.jpg">
+        </video>
+        <div class="main-header">
+            <h1 style="font-size:18em;">5IVE</h1>
+            <h4>STAR SALON SPA</h4>
+            <em>est. 1997</em>
+        </div>
+    </div>
+
+    <section id="welcome" class="au-animate">
+        <div class="container-fluid">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="col-md-4">
+                    <!--<img width="auto" height="100%" src="/images/kremer.jpg" alt="INSERT IMAGE HERE">-->
+                </div>
+                <div class="col-md-8">
+                    <div class="section-title">
+                        <h2>Welcome to Our Salon</h2></div>
+                    <hr>
+                    <div class="welcome-message">
+                        <p>
+                            The excitement of opening something new, something different, was too much for myself and my partner, David Kremer, to resist
+                            on April 1st 1997. We HAD to open 5IVE Star.
+                        </p>
+                        <p>
+                            Since then, we have made it our business to transform not only our wonderful clients we see everyday but also ourselves and
+                            our surroundings. We are constantly seeking individuality and driving change -- whether it is
+                            finding our next new TALENT or a fabulous piece of furniture that I’ve been after. I LOVE hearing
+                            from others “what have you changed now...?”
+                        </p>
+                        <p>
+                            Having been in the beauty business for over 20 years, I now know a thing or two about creating a memorable experience. I’ve
+                            taken the time to select the right people for the job of taking the absolute best care of our
+                            clients. We have created a team in the truest sense of the term. We work 2GETHER to deliver results
+                            for each and every guest.
+                        </p>
+                        <p>
+                            SO...welcome to something old, something new, to something origin‘ALL.’
+                        </p>
+                        <p <b><em>Fondly,</em></b>
+                        </p>
+                        <p>
+                            <b><em>Jfry.</em></b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="services" class="au-animate"  >
+        <div class="col-md-offset-2 col-md-8">
+            <div class="section-title">
+                <h1>Services</h1>
+                <hr>
+                <hr>
+            </div>
+            <div class="col-md-2" repeat.for="service of services">
+                <p>${service.name}</p>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="au-animate">
+        <div class="col-md-offset-2 col-md-8">
+            <div class="section-title">
+                <h1>Products</h1>
+                <hr>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+</template>

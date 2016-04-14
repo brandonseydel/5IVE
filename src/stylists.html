@@ -1,0 +1,24 @@
+<template>
+    <require from="blur-image"></require>
+    <require from="header-band.html"></require>
+    <section>
+        <header-band heading="Our Professionals"></header-band>
+        <div style="margin-top: 5px;" class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="col-sm-6 col-md-4 card-container au-animate" repeat.for="stylist of stylists">
+                        <div class="stylist">
+                            <img src.bind="stylist.image" ref="image"></img>
+                            <p class="name">
+                                ${stylist.name}
+                            </p>
+                            <p>
+                                ${stylist.bio}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
