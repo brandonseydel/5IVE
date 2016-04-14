@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # aurelia-skeleton-typescript-webpack
 
 ## Getting started
@@ -53,3 +54,7 @@ npm run test
 ```
 
 > **Note**: The e2e tests aren't working yet
+=======
+# 5IVE
+5IVE Star Website Design
+>>>>>>> 66118081f28a9d7afb42ec4beae08c1e906e933e
