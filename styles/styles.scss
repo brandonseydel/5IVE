@@ -57,14 +57,84 @@ button{
   color: #ffd400  
 }
 
+.navbar-1.navbar-default .navbar-nav > .active > a,
+.navbar-1.navbar-default .navbar-nav > .active > a:hover,
+.navbar-1.navbar-default .navbar-nav > .active > a:focus
+{
+  background-color: transparent;
+  color:gold;
+  box-shadow: 0 2px 0px white;
+}
+
+.navbar-2.navbar-default .navbar-nav > .active > a,
+.navbar-2.navbar-default .navbar-nav > .active > a:hover,
+.navbar-2.navbar-default .navbar-nav > .active > a:focus
+{
+  color:darkColor;   
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus
+{
+  background-color: transparent;
+  color:gold;
+}
+
+section.parallax {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.parallax-1 {
+  background-image: url("http://2.bp.blogspot.com/--ZawzUua2-Y/TgrUMSNsKfI/AAAAAAAAAaQ/I0hlOhZKIBE/s1600/p2.jpg");
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    section.parallax-1 {
+    background-position-y: 40px;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+#services{
+  color:$lightColor;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+section.parallax-2 {
+  background-image: url("http://callmenick.com/_development/simple-parallax-effect/img/demo/_small/2.jpg");
+}
+section.parallax-3 {
+  background-image: url("http://callmenick.com/_development/simple-parallax-effect/img/demo/_small/3.jpg");
+}
+
+
 .welcome-message{  
   font-size: 15px;
 }
 
-#services{  
-  background-image: url('http://www.dit.ie/media/retail/images/fashionbuyingandmanagement/fashion.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+#services, #products{
+  overflow: hidden;
 }
 
 #products{

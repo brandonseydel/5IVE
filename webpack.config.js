@@ -29,6 +29,7 @@ module.exports = {
         test: /\.scss$/,
         loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
       },
+      { test: /\.js$/, loader: 'babel', exclude: /node_modules/, query: { presets: ['es2015-loose', 'stage-1'], plugins: ['transform-decorators-legacy'] } },
       { test: /\.ts$/, loader: 'ts-loader' },
       { test: /\.css?$/, loader: 'style!css' },
       { test: /\.html$/, loader: 'raw' },
