@@ -1,0 +1,46 @@
+<template>
+   <require from="banner.html"></require>
+   <div class="page au-animate">
+      <div class="container-fluid">
+         <div class="row">
+            <banner banner-id="spa-banner" image="http://cdn1.loxabeauty.com/wp/wp-content/uploads/2013/04/stylingroom.jpg" height="500"/>
+         </div>
+         <div id="hair-section" class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <div class="col-md-12">
+               <div class="section-title">
+                  <h1>Hair</h1>
+                  <hr>
+                  <h4>Oh yea we will make you look good</h4>
+                  <hr>
+               </div>
+               </div>
+               <div class="col-md-12">
+                                  <ul class="nav nav-tabs text-center">
+                    <li repeat.for="tab of tabs" 
+                            click.delegate="selectTab(tab)"
+                            class="tab ${tab.selected ? 'active' : ''}">
+                        <a href="">${tab.title}</a>
+                    </li>
+               </ul>
+                                  </div>
+                                  <div class="col-md-12">
+                    <div innerhtml.bind="selectedTab.html | sanitizeHTML">                        
+                    </div></div>
+                    
+                    
+               
+               </div>
+         </div></div>
+         <div id="makeup-section" class="row">
+            <div class="col-md-offset-2 col-md-8">
+               <div class="section-title">
+                  <h1>Makeup</h1>
+                  <hr class="inverted">
+                  <hr class="inverted">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</template>

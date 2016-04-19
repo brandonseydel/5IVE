@@ -1,9 +1,14 @@
 <template>
   <require from="nav-bar.html"></require>
-  
+  <require from="footer.html"></require>
+  <require from="header-band.html"></require>
+
   <nav-bar router.bind="router"></nav-bar>
 
   <div class="page-host">
+  <header-band heading="${currentRoute}"></header-band>
     <router-view></router-view>
-  </div>  
+    <footer></footer>
+  </div>
 </template>
+

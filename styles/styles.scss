@@ -5,6 +5,7 @@
 
 $lightColor: #e7e7e7;
 $darkColor: rgb(100,100,100);
+$darkestColor: rgb(50,50,50);
 
 header-band .container-fluid{
     background-color: $lightColor;
@@ -94,40 +95,102 @@ section.parallax-1 {
 /* Mobile first queries */
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+  .main-header h1, .main-header h2{
+    font-size: 60px!important;
+    margin-top: -20px;
+  }
+  
+}
+
+
+
+.text-center{
+  text-align: center;
+}
+
+.well-shade{
+  color:$darkColor;
+}
+
+
+#hair-section .shape-well{
+  background-color: transparent;
+}
+
+.section-title > h1{
+  font-size: 50px;
+}
+
+.well-sub{
+  font-size: .7em;
+}
+
+.section-title > hr {
+  border: 1px solid gold;  
+  padding: 0;
+  margin: 3px;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.well-header{
+  text-align: center;  
+  font-size: 2em;
+}
+
+#hair-section .well-body{
+  text-align: center;
+}
+
+.section-title > hr.inverted {
+  border: 1px solid $darkestColor;  
+  padding: 0;
+  margin: 3px;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
 
 /* Larger than phablet */
 @media (min-width: 550px) {
     section.parallax-1 {
     background-position-y: 40px;
   }
+  
+    .main-header h1, .main-header h2{
+    font-size: 100px!important;
+    margin-top: -20px;
+  }
+  
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-  
-
+    .main-header h1, .main-header h2{
+    font-size: 150px!important;
+  }
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  .main-header h1, .main-header h2{
+    font-size: 220px!important;
+  }
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .main-header h1, .main-header h2{
+    font-size: 270px!important;
+  }
+}
 
 #services{
   color:$lightColor;
   font-weight: bolder;
   font-size: 1.5em;
 }
-
-section.parallax-2 {
-  background-image: url("http://callmenick.com/_development/simple-parallax-effect/img/demo/_small/2.jpg");
-}
-section.parallax-3 {
-  background-image: url("http://callmenick.com/_development/simple-parallax-effect/img/demo/_small/3.jpg");
-}
-
 
 .welcome-message{  
   font-size: 15px;
@@ -138,17 +201,23 @@ section.parallax-3 {
 }
 
 #products{
-    background-color: rgb(150, 200, 100)
+    background-color: $lightColor;
+    color:$darkColor;
 }
 
+#products hr{
+    border-color:$darkColor;  
+}
+
+
 #video{
-  background-color: gray;
+  background-color: $darkColor;
   color: #eee;
 }
 
 #welcome{
   border-bottom: rgb(200,200,200);   
-  background-color: gray;
+  background-color: $darkColor;
   color: #eee;
 }
 
@@ -237,13 +306,33 @@ body {
 }
 
 /* animate page transitions */
-.child-page.au-enter-active {
-  -webkit-animation: fadeInRight 1s;
-  animation: fadeInRight 1s;
+.page.au-enter-active {
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.page.au-enter-active {
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.page.au-leave-active {
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+
+
+
+#makeup-section{
+
+}
+
+#hair-section{
+    background-color: $darkColor;
+  color: $lightColor;  
 }
 
 .navbar-2{
-    background-color: gray;
+    background-color: $darkColor;
 }
 
 .navbar-1.au-enter{
@@ -293,6 +382,10 @@ div.au-stagger {
   color: rgb(136, 172, 217);
   margin-bottom: 32px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+#footer{
+  background-color: $darkestColor;
 }
 
 .card .content {

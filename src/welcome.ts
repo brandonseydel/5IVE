@@ -1,4 +1,4 @@
-declare var Parallax: any; 
+
 export class Welcome {
     services = [
         { name: "testadsf" },
@@ -11,6 +11,5 @@ export class Welcome {
         { name: "ASDFASDFAS" }];
         
         attached(){
-            var p = new Parallax('.parallax').init();
         }
 }
